@@ -1,0 +1,31 @@
+{
+  "name": "es2015-2-extendScript-build",
+  "version": "1.0.0",
+  "description": "A node build configuration to develop extendScripts with es2015 javascript code",
+  "scripts": {
+    "compile": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogelino/es2015-2-extendScript-build.git"
+  },
+  "keywords": [
+    "automation",
+    "build",
+    "process",
+    "extendScript",
+    "indesign",
+    "illustrator",
+    "photoshop",
+    "adobe",
+    "es2105",
+    "es6",
+    "compile"
+  ],
+  "author": "vogelino",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/vogelino/es2015-2-extendScript-build/issues"
+  },
+  "homepage": "https://github.com/vogelino/es2015-2-extendScript-build#readme"
+}
