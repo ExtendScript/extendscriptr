@@ -3,5 +3,9 @@
 		"es2015",
 		"stage-0"
 	],
-	"plugins": []
+	"plugins": [
+		"babel-plugin-transform-es3-member-expression-literals",
+		"babel-plugin-transform-es3-property-literals",
+		"babel-plugin-transform-es5-property-mutators"
+	]
 }
