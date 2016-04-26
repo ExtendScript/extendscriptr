@@ -1,3 +1,4 @@
+var fs = require('fs');
 var gulp = require('gulp');
 var browserify = require('browserify');
 var babelify = require('babelify');
@@ -52,6 +53,7 @@ gulp.task('es2015-to-es5', ['clean'], function() {
 		.bundle()
 		.on('error', util.log.bind(util, 'Browserify Error'))
 		.pipe(source(outputFileName))
+		.pipe(insert.prepend(fs.readFileSync(srcRoot + '/lib/polyfills.js')))
 		.pipe(insert.prepend(
 			'#includepath "~/Documents/;%USERPROFILE%Documents";\n' +
 			'#include "basiljs/bundle/basil.js";\n\n'
