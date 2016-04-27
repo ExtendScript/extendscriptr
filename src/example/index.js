@@ -1,4 +1,6 @@
 
-var test = Object.assign({}, { a: 1 }, { b: 2 });
+// LUCAS
+var test = () =>
+	Object.assign({}, { a: 'LUCAS' }, { b: 'VOGEL' });
 
-alert(JSON.stringify(test));
+alert(JSON.stringify(test()));

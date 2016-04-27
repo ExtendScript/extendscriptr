@@ -38,10 +38,9 @@
     "babel-preset-stage-0": "^6.5.0",
     "babelify": "^7.3.0",
     "browserify": "^3.0.0",
-    "browserify-extendscript": "^0.1.0",
     "gulp": "^3.9.1",
-    "gulp-insert": "^0.5.0",
     "gulp-util": "^3.0.7",
-    "recursive-readdir": "^2.0.0"
+    "recursive-readdir": "^2.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
