@@ -2,7 +2,7 @@
 NOTE: This is a work in progress - Star this project and stay tuned, we will announce it when it will be working and available on [npmjs.org](https://www.npmjs.com/)
 
 ## Why
-Building scripts for Adobe products (mostly used for After Effects and inDesign) can be pain for the finger nails if you are used to proper javascript environments. With this CLI node module, you will be able to write AMD javascript code in its most recent version: [ECMAScript® 2015](http://www.ecma-international.org/ecma-262/6.0/).
+Building scripts for Adobe products (mostly used for After Effects and inDesign) can be pain for the finger nails if you are used to proper javascript environments. With this CLI node module, you will be able to write AMD javascript code in its most recent version ([ECMAScript® 2015](http://www.ecma-international.org/ecma-262/6.0/)) and compile is down in an Adobe compatible format.
 
 ## Goal
 The wished workflow with this module can be resumed in a few steps:
