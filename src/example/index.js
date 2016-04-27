@@ -1,8 +1,4 @@
-function draw() {
 
-  b.doc();
-  b.text("Hello World", 100, 100, 200, 50);
+var test = Object.assign({}, { a: 1 }, { b: 2 });
 
-}
-
-b.go();
+alert(JSON.stringify(test));

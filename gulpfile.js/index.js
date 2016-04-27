@@ -1,5 +1,6 @@
 var fs = require('fs');
 var gulp = require('gulp');
+var extendscript = require('browserify-extendscript');
 var browserify = require('browserify');
 var babelify = require('babelify');
 var clean = require('gulp-clean');
@@ -32,24 +33,26 @@ gulp.task('es2015-to-es5', ['clean'], function() {
 			filesUtil.getLastModifiedFileInDir(srcRoot);
 	var outputFileName = argv.output || argv.o || 'scriptOutput.js';
 
-	if (!entryPath) {
-		util.beep();
-		util.log(util.colors.red(
-			'You must provide the path to the script ' +
-			'you want to compile. Use therefor -script or -s'));
-		return;
-	}
-
-	if (!outputFileName) {
-		util.beep();
-		util.log(util.colors.red(
-			'You must provide an output filename. ' +
-			'Use therefor -output or -o'));
-		return;
-	}
-
-	return browserify(entryPath)
-		.transform(babelify, {})
+	return browserify({
+			entries: [
+				'babel-polyfill',
+				entryPath
+			],
+			plugin: [ extendscript ],
+			transform: [
+				babelify.configure({
+					presets: [
+						'es2015',
+						'stage-0'
+					],
+					plugins: [
+						'transform-es3-member-expression-literals',
+						'transform-es3-property-literals',
+						'transform-es5-property-mutators'
+					]
+				})
+			]
+		})
 		.bundle()
 		.on('error', util.log.bind(util, 'Browserify Error'))
 		.pipe(source(outputFileName))
