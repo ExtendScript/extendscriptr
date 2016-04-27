@@ -1,4 +1,6 @@
-# A [NPM](https://www.npmjs.com/) CLI to compile es2015 AMD code into an executable [ExtendScript](http://yearbook.github.io/esdocs/#/)
+# es2015-2-extendScript-build  
+
+A [NPM](https://www.npmjs.com/) CLI to compile es2015 AMD code into an executable [ExtendScript](https://www.adobe.com/devnet/scripting.html)
 
 [![Join the chat at https://gitter.im/vogelino/es2015-2-extendScript-build](https://badges.gitter.im/vogelino/es2015-2-extendScript-build.svg)](https://gitter.im/vogelino/es2015-2-extendScript-build?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
 
