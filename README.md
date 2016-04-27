@@ -1,6 +1,7 @@
 # A [NPM](https://www.npmjs.com/) CLI to compile es2015 AMD code into an executable [ExtendScript](http://yearbook.github.io/esdocs/#/)
 
-[![Join the chat at https://gitter.im/vogelino/es2015-2-extendScript-build](https://badges.gitter.im/vogelino/es2015-2-extendScript-build.svg)](https://gitter.im/vogelino/es2015-2-extendScript-build?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/vogelino/es2015-2-extendScript-build](https://badges.gitter.im/vogelino/es2015-2-extendScript-build.svg)](https://gitter.im/vogelino/es2015-2-extendScript-build?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
+
 NOTE: This is a work in progress - Star this project and stay tuned, we will announce it when it will be working and available on [npmjs.org](https://www.npmjs.com/)
 
 ## Why
@@ -11,7 +12,7 @@ The wished workflow with this module can be resumed in a few steps:
 
 - `npm install -g es2015-2-extendScript-build`
 - `es2015-2-extendScript-build --script src/scripts/helloWorld.js --output dist/helloWord.js`
-- open the outputed file with extendScript Toolbelt
+- open the outputed file with ExtendScript Toolkit
 - run it
 
 ## Name
