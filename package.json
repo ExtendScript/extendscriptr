@@ -8,9 +8,10 @@
     "clean": "npm run clean:temp & npm run clean:dist ; mkdir dist & mkdir .tmp",
     "insert-polyfill:own": "cat ./src/lib/polyfills.js >> ./dist/output.js",
     "insert-polyfill:babel": "cat ./src/lib/babel-polyfill.js >> ./dist/output.js",
+    "insert-polyfill:coreJs": "cat ./src/lib/coreJsShim.js >> ./dist/output.js",
     "insert-bundle": "cat ./.tmp/script.js >> ./dist/output.js",
     "bundle": "browserify -e  -o .tmp/script.js -t [ babelify ]",
-    "compile": "npm run clean ; npm run insert-polyfill:own ; npm run insert-polyfill:babel ; npm run bundle ; npm run insert-bundle ; npm run clean:temp",
+    "compile": "npm run clean ; npm run insert-polyfill:own ; npm run insert-polyfill:coreJs ; npm run bundle ; npm run insert-bundle ; npm run clean:temp",
     "start": "npm run compile"
   },
   "repository": {
