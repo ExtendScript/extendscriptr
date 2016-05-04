@@ -1,5 +1,5 @@
 node_modules
 *.sublime-*
-dist
+test/dist
 .tmp
 

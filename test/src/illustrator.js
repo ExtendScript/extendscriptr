@@ -9,10 +9,10 @@ const doc = app.documents.add(null,width,height);
 const m = 30;
 const path1 = doc.pathItems.add();
 path1.setEntirePath ([
-	[m,m],
-	[m,height-m],
-	[width-m,height-m],
-	[width-m,m]
+	[m, m],
+	[m, height - m],
+	[width - m, height - m],
+	[width - m, m]
 ]);
 
 const text1 = doc.textFrames.areaText( path1 );
