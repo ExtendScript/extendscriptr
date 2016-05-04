@@ -1,7 +1,6 @@
 {
 	"presets": [
-		"es2015",
-		"stage-0"
+		"es2015"
 	],
 	"plugins": [
 		"babel-plugin-transform-es3-member-expression-literals",

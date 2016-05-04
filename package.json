@@ -1,22 +1,20 @@
 {
-  "name": "es2015-2-extendScript-build",
+  "name": "extendscriptr",
   "version": "1.0.0",
   "description": "A node build configuration to develop extendScripts with es2015 javascript code",
   "scripts": {
     "clean:temp": "rm -rf ./.tmp",
     "clean:dist": "rm -rf ./dist",
     "clean": "npm run clean:temp & npm run clean:dist ; mkdir dist & mkdir .tmp",
-    "insert-polyfill:own": "cat ./src/lib/polyfills.js >> ./dist/output.js",
-    "insert-polyfill:babel": "cat ./src/lib/babel-polyfill.js >> ./dist/output.js",
-    "insert-polyfill:coreJs": "cat ./src/lib/coreJsShim.js >> ./dist/output.js",
+    "insert-polyfills": "cat ./node_modules/extendscript.prototypes/dist/extendscript.prototypes.0.0.5.jsx >> ./dist/output.js",
     "insert-bundle": "cat ./.tmp/script.js >> ./dist/output.js",
-    "bundle": "browserify -e  -o .tmp/script.js -t [ babelify ]",
-    "compile": "npm run clean ; npm run insert-polyfill:own ; npm run insert-polyfill:coreJs ; npm run bundle ; npm run insert-bundle ; npm run clean:temp",
+    "bundle": "browserify -e ./src/index.js -o .tmp/script.js -t [ babelify ]",
+    "compile": "npm run clean ; npm run insert-polyfills ; npm run bundle ; npm run insert-bundle ; npm run clean:temp",
     "start": "npm run compile"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vogelino/es2015-2-extendScript-build.git"
+    "url": "git+https://github.com/vogelino/extendscriptr.git"
   },
   "keywords": [
     "automation",
@@ -34,18 +32,17 @@
   "author": "vogelino",
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/vogelino/es2015-2-extendScript-build/issues"
+    "url": "https://github.com/vogelino/extendscriptr/issues"
   },
-  "homepage": "https://github.com/vogelino/es2015-2-extendScript-build#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/vogelino/extendscriptr#readme",
+  "dependencies": {
     "babel": "^6.5.2",
     "babel-plugin-transform-es3-member-expression-literals": "^6.5.0",
     "babel-plugin-transform-es3-property-literals": "^6.5.0",
     "babel-plugin-transform-es5-property-mutators": "^6.6.5",
-    "babel-polyfill": "^6.7.4",
     "babel-preset-es2015": "^6.6.0",
-    "babel-preset-stage-0": "^6.5.0",
     "babelify": "^7.3.0",
-    "browserify": "^13.0.0"
+    "browserify": "^13.0.0",
+    "extendscript.prototypes": "0.0.5"
   }
 }
