@@ -1,4 +1,4 @@
-# es2015-2-extendScript-build  
+# extendscriptr
 
 A [NPM](https://www.npmjs.com/) CLI to compile es2015 AMD code into an executable [ExtendScript](https://www.adobe.com/devnet/scripting.html)
 
