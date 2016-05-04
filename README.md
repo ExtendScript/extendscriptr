@@ -17,9 +17,6 @@ The wished workflow with this module can be resumed in a few steps:
 - open the outputed file with ExtendScript Toolkit
 - run it
 
-## Name
-The name `extendscriptr` is subject to modification. Stay tuned.
-
 ## Authors/Contributors
 - Lucas Vogel @vogelino
 - Fabian Morón Zirfas @fabiantheblind 
