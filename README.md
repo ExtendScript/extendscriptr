@@ -1,5 +1,7 @@
 # extendscriptr
 
+[![npm version](https://badge.fury.io/js/extendscriptr.svg)](https://badge.fury.io/js/extendscriptr)
+
 A [NPM](https://www.npmjs.com/) CLI to compile es2015 AMD code into an executable [ExtendScript](https://www.adobe.com/devnet/scripting.html)
 
 [![Join the chat at https://gitter.im/vogelino/extendscriptr](https://badges.gitter.im/vogelino/extendscriptr.svg)](https://gitter.im/vogelino/extendscriptr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
