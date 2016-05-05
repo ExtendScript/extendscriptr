@@ -3,7 +3,7 @@
     "extendscriptr": "./index.js"
   },
   "name": "extendscriptr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node build configuration to develop extendScripts with es2015 javascript code",
   "scripts": {
     "clean:temp": "rm -rf ./.tmp ; mkdir ./.tmp",
