@@ -47,7 +47,7 @@
     "babelify": "^7.3.0",
     "browserify": "^13.0.0",
     "commander": "^2.9.0",
-    "extendscript.prototypes": "0.0.5",
+    "extendscript.prototypes": "0.0.8",
     "prependify": "^1.2.0"
   }
 }
