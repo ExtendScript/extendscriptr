@@ -2,7 +2,6 @@
 var extendscriptr = require('commander');
 var packageJson = require('./package.json');
 var browserify = require('browserify');
-var babelify = require('babelify');
 var prependify = require('prependify');
 var fs = require('fs');
 
@@ -37,20 +36,18 @@ if ( adobeTarget &&
 	browserifyPlugins.push([ prependify, '#target ' + extendscriptr.target + '\n' ]);
 }
 
-babelify.configure({
-	presets: [
-		'es2015'
-	],
-	plugins: [
-		'babel-plugin-transform-es3-member-expression-literals',
-		'babel-plugin-transform-es3-property-literals',
-		'babel-plugin-transform-es5-property-mutators'
-	]
-});
-
 var b = browserify({
 	entries: [ extendscriptr.script ],
-	transform: babelify,
+	transform: [['babelify', {
+		presets: [
+			'es2015'
+		],
+		plugins: [
+			'babel-plugin-transform-es3-member-expression-literals',
+			'babel-plugin-transform-es3-property-literals',
+			'babel-plugin-transform-es5-property-mutators'
+		]
+	}]],
 	plugin: browserifyPlugins
 });
 
