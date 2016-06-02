@@ -3,7 +3,6 @@
     "extendscriptr": "./index.js"
   },
   "name": "extendscriptr",
-  "version": "1.0.3",
   "description": "A node build configuration to develop extendScripts with es2015 javascript code",
   "scripts": {
     "clean:temp": "rm -rf ./.tmp ; mkdir ./.tmp",
@@ -13,11 +12,12 @@
     "compile:test:aftereffects": "node ./index.js -s test/src/aftereffects.js -o test/dist/aftereffects.js -t 'aftereffects'",
     "compile:test:photoshop": "node ./index.js -s test/src/photoshop.js -o test/dist/photoshop.js -t 'photoshop'",
     "compile:test:all": "npm run compile:test:illustrator & npm run compile:test:indesign & npm run compile:test:aftereffects & npm run compile:test:photoshop",
-    "test": "npm run clean:dist ; npm run compile:test:all ; npm run clean:temp"
+    "test": "npm run clean:dist ; npm run compile:test:all ; npm run clean:temp",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vogelino/extendscriptr.git"
+    "url": "https://github.com/ExtendScript/extendscriptr.git"
   },
   "keywords": [
     "automation",
@@ -35,9 +35,9 @@
   "author": "vogelino",
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/vogelino/extendscriptr/issues"
+    "url": "https://github.com/ExtendScript/extendscriptr/issues"
   },
-  "homepage": "https://github.com/vogelino/extendscriptr#readme",
+  "homepage": "https://github.com/ExtendScript/extendscriptr#readme",
   "dependencies": {
     "babel": "^6.5.2",
     "babel-plugin-transform-es3-member-expression-literals": "^6.5.0",
@@ -49,5 +49,8 @@
     "commander": "^2.9.0",
     "extendscript.prototypes": "0.0.8",
     "prependify": "^1.2.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^4.3.5"
   }
 }
