@@ -5,6 +5,7 @@
   "name": "extendscriptr",
   "description": "A node build configuration to develop extendScripts with es2015 javascript code",
   "scripts": {
+    "commit": "git-cz",
     "clean:temp": "rm -rf ./.tmp ; mkdir ./.tmp",
     "clean:dist": "rm -rf ./test/dist ; mkdir ./test/dist",
     "compile:test:illustrator": "node ./index.js -s test/src/illustrator.js -o test/dist/illustrator.js -t 'illustrator'",
@@ -51,6 +52,13 @@
     "prependify": "^1.2.0"
   },
   "devDependencies": {
+    "commitizen": "^2.8.1",
+    "cz-conventional-changelog": "^1.1.6",
     "semantic-release": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
