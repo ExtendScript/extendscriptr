@@ -24,8 +24,8 @@ We recommend using it as a local dependency
 - run it
 
 ## Authors/Contributors
-- Lucas Vogel @vogelino
-- Fabian Morón Zirfas @fabiantheblind 
+- Lucas Vogel [@vogelino](https://github.com/vogelino)  
+- Fabian Morón Zirfas [@fabiantheblind](https://github.com/fabiantheblind)  
 
 ### Contribute
 We would be happy to have contributions from other members as well. Don't hesitate to make pull requests or contact us if you wish to get contributor rights.
