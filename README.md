@@ -13,9 +13,10 @@ Extendscriptr doesn't use an existing full-stack polyfills like `babel-polyfill`
 
 ## Prerequisites  
 
-This tool currently needs Node.js version 5.x or higher  
+This tool currently needs npm version 3.x or higher due to the flattend folder strcture. 
 
-## Usage
+## Usage  
+
 We recommend using it as a local dependency 
 
 - `npm install extendscriptr --save-dev`
