@@ -1,37 +1,37 @@
 {
-	"extends": "eslint:recommended",
-	"ecmaFeatures": {
-		"arrowFunctions": true,
-		"blockBindings": true,
-		"classes": true,
-		"defaultParams": true,
-		"destructering": true,
-		"spread": true,
-		"superInFunctions": true,
-		"templateStrings": true,
-		"unicodeCodePointEscapes": true,
-		"modules": true
-	},
-	"rules": {
-		"quotes": [2, "single"],
-		"eqeqeq": 2,
-		"curly": 2,
-		"camelcase": 2,
-		"strict": [2, "global"],
-		"no-var": 2,
-		"no-unused-vars": 2,
-		"no-console": 0,
-		"max-len": [2, 90, 4],
-		"semi": [2, "always"]
-	},
-	"parser": "babel-eslint",
-	"environment": {
-		"browser": true,
-		"es6": true
-	},
-	"settings": {
-		"ecmascript": 6,
-		"jsx": false
-	}
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+        "arrowFunctions": true,
+        "blockBindings": true,
+        "classes": true,
+        "defaultParams": true,
+        "destructering": true,
+        "spread": true,
+        "superInFunctions": true,
+        "templateStrings": true,
+        "unicodeCodePointEscapes": true,
+        "modules": true
+    },
+    "rules": {
+        "quotes": [2, "single"],
+        "eqeqeq": 2,
+        "curly": 2,
+        "camelcase": 2,
+        "strict": [2, "global"],
+        "no-var": 2,
+        "no-unused-vars": 2,
+        "no-console": 0,
+        "max-len": [2, 90, 4],
+        "semi": [2, "always"],
+        "indent": [ 2, "tab" ]
+    },
+    "parser": "babel-eslint",
+    "environment": {
+        "browser": true,
+        "es6": true
+    },
+    "settings": {
+        "ecmascript": 6,
+        "jsx": false
+    }
 }
-

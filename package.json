@@ -41,6 +41,7 @@
     "prependify": "^1.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^6.0.4",
     "commitizen": "^2.8.1",
     "cz-conventional-changelog": "^1.1.6",
     "semantic-release": "^4.3.5"
