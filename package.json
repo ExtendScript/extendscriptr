@@ -21,7 +21,19 @@
     "type": "git",
     "url": "https://github.com/ExtendScript/extendscriptr.git"
   },
-  "keywords": ["automation", "build", "process", "extendScript", "indesign", "illustrator", "photoshop", "adobe", "es2105", "es6", "compile"],
+  "keywords": [
+    "automation",
+    "build",
+    "process",
+    "extendScript",
+    "indesign",
+    "illustrator",
+    "photoshop",
+    "adobe",
+    "es2105",
+    "es6",
+    "compile"
+  ],
   "author": "vogelino",
   "license": "WTFPL",
   "bugs": {
@@ -52,7 +64,7 @@
     }
   },
   "engineStrict": true,
-    "engines": {
-      "npm": ">=3.0.0"
-    }
+  "engines": {
+    "npm": ">=3.0.0"
   }
+}
