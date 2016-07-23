@@ -12,11 +12,9 @@ Extendscriptr relays on [`extendscript.prototypes`](https://github.com/fabianthe
 Extendscriptr doesn't use an existing full-stack polyfills like `babel-polyfill`, `es5-shim` or `shim.js` as they are intended for the browser and don't work well in adobe applications.
 
 ## Prerequisites  
-
 This tool currently needs npm version 3.x or higher due to the flattend folder strcture.
 
 ## Usage  
-
 We recommend using it as a local dependency
 
 - `npm install extendscriptr --save-dev`
