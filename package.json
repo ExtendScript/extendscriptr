@@ -3,6 +3,7 @@
     "extendscriptr": "./index.js"
   },
   "name": "extendscriptr",
+  "version": "0.0.0-semantically-released",
   "description": "A node build configuration to develop extendScripts with es2015 javascript code",
   "scripts": {
     "commit": "git-cz",
