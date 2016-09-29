@@ -12,15 +12,17 @@ Extendscriptr relays on [`extendscript.prototypes`](https://github.com/fabianthe
 Extendscriptr doesn't use an existing full-stack polyfills like `babel-polyfill`, `es5-shim` or `shim.js` as they are intended for the browser and don't work well in adobe applications.
 
 ## Prerequisites  
-This tool currently needs npm version 3.x or higher due to the flattend folder strcture.
+This tool currently needs npm version 3.x or higher due to the flattened folder structure.
 
 ## Usage  
-We recommend using it as a local dependency
+We recommend using it as a local dependency\*
 
 - `npm install extendscriptr --save-dev`
 - `./node_modules/.bin/extendscriptr --script src/scripts/helloWorld.js --output dist/helloWord.js`
-- open the outputed file with ExtendScript Toolkit OR place your script in the relevant application script folder
+- open the outputted file with ExtendScript Toolkit OR place your script in the relevant application script folder
 - run it
+
+\* a _global install is currently not working due to the fact that ExtendScript is missing to many functions. See [this issue](https://github.com/ExtendScript/extendscriptr/issues/22)_  
 
 ## Authors/Contributors
 - Lucas Vogel [@vogelino](https://github.com/vogelino)  
@@ -30,7 +32,7 @@ We recommend using it as a local dependency
 We would be happy to have contributions from other members as well. Don't hesitate to make pull requests or contact us if you wish to get contributor rights.
 
 #### Publish with semantic release and conventional commits
-Publishing new versions of extendscriptr is handled by [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release). This means that new versions will be built on travis and published on every push based on the latest commit message. Therefor, commit messages need to satisfy [some conventions](https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md). The project uses [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) to facilitate the messages formatting. Make sur to commit by running ``npm run commit`` instead of ``git commit [-m"change" ...]`` to be prompted to the conventional changelog form.
+Publishing new versions of extendscriptr is handled by [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release). This means that new versions will be built on travis and published on every push based on the latest commit message. Therefor, commit messages need to satisfy [some conventions](https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md). The project uses [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) to facilitate the messages formatting. Make sure to commit by running ``npm run commit`` instead of ``git commit [-m"change" ...]`` to be prompted to the conventional changelog form.
 
 ### Report issues
 Feel free to report any issue you would encounter using the module.
