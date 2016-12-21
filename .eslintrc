@@ -23,7 +23,7 @@
         "no-console": 0,
         "max-len": [2, 90, 4],
         "semi": [2, "always"],
-        "indent": [ 2, "tab" ]
+        "indent": [ 2 ]
     },
     "parser": "babel-eslint",
     "environment": {

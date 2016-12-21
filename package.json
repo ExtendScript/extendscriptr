@@ -12,9 +12,10 @@
     "clean:dist": "rm -rf ./test/dist ; mkdir ./test/dist",
     "compile:test:illustrator": "node ./index.js -s test/src/illustrator.js -o test/dist/illustrator.js -t 'illustrator'",
     "compile:test:indesign": "node ./index.js -s test/src/indesign.js -o test/dist/indesign.js -t 'indesign'",
+    "compile:test:indesign-basil": "./node_modules/.bin/exsbundlr -i test/src/indesign-basil.js -o test/dist/indesign-basil.bundle.js & node ./index.js -s test/dist/indesign-basil.bundle.js -o test/dist/indesign-basil.js",
     "compile:test:aftereffects": "node ./index.js -s test/src/aftereffects.js -o test/dist/aftereffects.js -t 'aftereffects'",
     "compile:test:photoshop": "node ./index.js -s test/src/photoshop.js -o test/dist/photoshop.js -t 'photoshop'",
-    "compile:test:all": "npm run compile:test:illustrator & npm run compile:test:indesign & npm run compile:test:aftereffects & npm run compile:test:photoshop",
+    "compile:test:all": "npm run compile:test:illustrator & npm run compile:test:indesign & npm run compile:test:indesign-basil & npm run compile:test:aftereffects & npm run compile:test:photoshop",
     "test": "npm run clean:dist ; npm run compile:test:all ; npm run clean:temp",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -57,6 +58,7 @@
     "babel-eslint": "^6.0.4",
     "commitizen": "^2.8.1",
     "cz-conventional-changelog": "^1.1.6",
+    "extendscript-bundlr": "^0.3.1",
     "semantic-release": "^4.3.5"
   },
   "config": {
