@@ -2,7 +2,7 @@
   "bin": {
     "extendscriptr": "./index.js"
   },
-  "version":"1.1.0",
+  "version": "1.1.1",
   "name": "extendscriptr",
   "description": "A node build configuration to develop extendScripts with es2015 javascript code",
   "scripts": {
