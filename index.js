@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-var extendscriptr = require('commander');
-var packageJson = require('./package.json');
-var browserify = require('browserify');
-var prependify = require('prependify');
-var fs = require('fs');
+const extendscriptr = require('commander');
+const packageJson = require('./package.json');
+const browserify = require('browserify');
+const prependify = require('prependify');
+const fs = require('fs');
 
 extendscriptr
   .version(packageJson.version)
