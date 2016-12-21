@@ -1,4 +1,9 @@
 #!/usr/bin/env node
+/*
+
+Pretty annoyed by overhead of tooling for such a simple process of
+releasing a new version
+ */
 const extendscriptr = require('commander');
 const packageJson = require('./package.json');
 const browserify = require('browserify');
@@ -24,6 +29,9 @@ extendscriptr.options.forEach(function(opt) {
   );
 });
 
+var fooBah = function(){
+    let annoyed = true;
+};
 var prototypePolyfills = fs.readFileSync('./node_modules/extendscript.prototypes/lib/extendscript.prototypes.js', 'utf8');
 var browserifyPlugins = [ [ prependify, prototypePolyfills ] ];
 
