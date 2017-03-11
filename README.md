@@ -24,6 +24,17 @@ We recommend using it as a local dependency\*
 
 \* a _global install is currently not working due to the fact that ExtendScript is missing to many functions. See [this issue](https://github.com/ExtendScript/extendscriptr/issues/22)_  
 
+Exstendscriptr does not have any built-in _watch_ capability, but you can accomplish this using the [watch](https://www.npmjs.com/package/watch) module:
+
+```bash
+npm install watch -D
+```
+Run the following and Extendscriptr will automatically run every time you save a file in the `src/` directory:
+
+```bash
+./node_modules/.bin/watch "./node_modules/.bin/extendscriptr --script src/helloWorld.js --output dist/helloWord.js" src/
+```
+
 ## Authors/Contributors
 - Lucas Vogel [@vogelino](https://github.com/vogelino)  
 - Fabian Morón Zirfas [@fabiantheblind](https://github.com/fabiantheblind)  
