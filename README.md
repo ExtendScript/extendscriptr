@@ -24,6 +24,8 @@ We recommend using it as a local dependency\*
 
 \* a _global install is currently not working due to the fact that ExtendScript is missing to many functions. See [this issue](https://github.com/ExtendScript/extendscriptr/issues/22)_  
 
+### Watch mode
+
 Exstendscriptr does not have any built-in _watch_ capability, but you can accomplish this using the [watch](https://www.npmjs.com/package/watch) module:
 
 ```bash
