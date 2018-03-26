@@ -38,10 +38,9 @@ if ( adobeTarget &&
     browserifyPlugins.push([ prependify, '#target ' + extendscriptr.target + '\n' ]);
 }
 
-var targetEngine = String(extendscriptr.targetengine).toLowerCase();
-if ( targetEngine &&
-  (targetEngine === 'session')) {
-    browserifyPlugins.push([ prependify, '#targetengine "' + extendscriptr.targetengine + '"\n' ]);
+var targetEngine = String(extendscriptr.targetengine).replace(/\s+/g, '');
+if ( targetEngine.length > 0) {
+    browserifyPlugins.push([ prependify, '#targetengine "' + targetEngine + '"\n' ]);
 }
 
 var b = browserify({
