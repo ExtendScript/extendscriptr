@@ -26,6 +26,7 @@ extendscriptr.options.forEach(function(opt) {
   );
 });
 
+var browserifyPlugins = [];
 var adobeTarget = String(extendscriptr.target).toLowerCase();
 if ( adobeTarget &&
    ( adobeTarget.indexOf('indesign')     >= 0 ||
@@ -40,7 +41,7 @@ if( extendscriptr.typescript ) {
   return;
 } else {
   var prototypePolyfills = fs.readFileSync(require.resolve('extendscript.prototypes'), 'utf8');
-  var browserifyPlugins = [ [ prependify, prototypePolyfills ] ];
+  browserifyPlugins.push ([ prependify, prototypePolyfills ]);
 
   var b = browserify({
       entries: [ extendscriptr.script ],
