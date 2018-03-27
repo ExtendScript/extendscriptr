@@ -6,6 +6,7 @@
   "name": "extendscriptr",
   "description": "A node build configuration to develop extendScripts with es2015 javascript code",
   "scripts": {
+    "init": "function esconvert { (PATH=$(npm bin):$PATH; eval 'extendscriptr --script '$@;) }",
     "commit": "git-cz",
     "quatsch": "do",
     "clean:temp": "rm -rf ./.tmp ; mkdir ./.tmp",
