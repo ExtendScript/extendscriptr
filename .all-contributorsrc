@@ -6,32 +6,17 @@
   "files": [
     "README.md"
   ],
-  "imageSize": 128,
+  "imageSize": 50,
   "commit": true,
   "contributors": [
     {
-      "login": "jfmengels",
-      "name": "Jeroen Engels",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/3869412?v=4",
-      "profile": "https://github.com/jfmengels",
+      "login": "vogelino",
+      "name": "Lucas Vogel",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2759340?v=4",
+      "profile": "http://www.vogelino.com",
       "contributions": [
-        "doc"
-      ]
-    },
-    {
-      "login": "GitBruno",
-      "name": "Bruno Herfst",
-      "avatar_url": "https://avatars2.githubusercontent.com/u/1421477?v=4",
-      "profile": "http://brunoherfst.com",
-      "contributions": [
-        "question",
         "code",
-        "design",
-        "doc",
-        "example",
-        "ideas",
-        "infra",
-        "tool"
+        "design"
       ]
     }
   ]
