@@ -37,10 +37,6 @@ Run the following and Extendscriptr will automatically run every time you save a
 ./node_modules/.bin/watch "./node_modules/.bin/extendscriptr --script src/helloWorld.js --output dist/helloWord.js" src/
 ```
 
-## Authors/Contributors
-- Lucas Vogel [@vogelino](https://github.com/vogelino)  
-- Fabian Morón Zirfas [@fabiantheblind](https://github.com/fabiantheblind)  
-
 ### Contribute
 We would be happy to have contributions from other members as well. Don't hesitate to make pull requests or contact us if you wish to get contributor rights.
 

@@ -66,6 +66,12 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "contributors": [
+    "Lucas Vogel",
+    "Fabian Morón Zirfas",
+    "Bruno Herfst"
+
+  ],
   "engineStrict": true,
   "engines": {
     "npm": ">=3.0.0"
