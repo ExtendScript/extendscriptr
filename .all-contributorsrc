@@ -28,6 +28,15 @@
         "question",
         "design"
       ]
+    },
+    {
+      "login": "GitBruno",
+      "name": "Bruno Herfst",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1421477?v=4",
+      "profile": "http://brunoherfst.com",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
