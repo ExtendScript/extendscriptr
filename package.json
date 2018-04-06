@@ -57,7 +57,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
-    "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.1.0",
     "extendscript-bundlr": "^0.3.1",
     "semantic-release": "^4.3.5"
