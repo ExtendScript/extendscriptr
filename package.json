@@ -14,7 +14,9 @@
     "compile:test:aftereffects": "node ./index.js -s test/src/aftereffects.js -o test/dist/aftereffects.js -t 'aftereffects'",
     "compile:test:photoshop": "node ./index.js -s test/src/photoshop.js -o test/dist/photoshop.js -t 'photoshop'",
     "compile:test:all": "npm run compile:test:illustrator & npm run compile:test:indesign & npm run compile:test:indesign-basil & npm run compile:test:aftereffects & npm run compile:test:photoshop",
-    "test": "npm run clean:dist ; npm run compile:test:all ; npm run clean:temp"
+    "test": "npm run clean:dist ; npm run compile:test:all ; npm run clean:temp",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "repository": {
     "type": "git",
@@ -53,6 +55,7 @@
     "prependify": "^1.3.0"
   },
   "devDependencies": {
+    "all-contributors-cli": "^4.11.1",
     "babel-eslint": "^6.0.4",
     "cz-conventional-changelog": "^2.1.0",
     "extendscript-bundlr": "^0.3.1"
