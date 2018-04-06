@@ -1,5 +1,5 @@
 # Extendscriptr  
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 [![npm version](https://badge.fury.io/js/extendscriptr.svg)](https://badge.fury.io/js/extendscriptr) [![Join the chat at https://gitter.im/vogelino/extendscriptr](https://badges.gitter.im/vogelino/extendscriptr.svg)](https://gitter.im/vogelino/extendscriptr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![travis](https://travis-ci.org/ExtendScript/extendscriptr.svg)](https://travis-ci.org/ExtendScript/extendscriptr)  
@@ -54,8 +54,8 @@ WTFPL - Do whatever the fuck you want
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/u/2759340?v=4" width="50px;"/><br /><sub><b>Lucas Vogel</b></sub>](http://www.vogelino.com)<br />[💻](https://github.com/ExtendScript/extendscriptr/commits?author=vogelino "Code") [🎨](#design-vogelino "Design") |
-| :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/2759340?v=4" width="50px;"/><br /><sub><b>Lucas Vogel</b></sub>](http://www.vogelino.com)<br />[💻](https://github.com/ExtendScript/extendscriptr/commits?author=vogelino "Code") [🎨](#design-vogelino "Design") | [<img src="https://avatars3.githubusercontent.com/u/315106?v=4" width="50px;"/><br /><sub><b>Fabian Morón Zirfas</b></sub>](https://fabianmoronzirfas.me)<br />[💬](#question-fabianmoronzirfas "Answering Questions") [🎨](#design-fabianmoronzirfas "Design") |
+| :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
