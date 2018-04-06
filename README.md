@@ -40,8 +40,6 @@ Run the following and Extendscriptr will automatically run every time you save a
 ### Contribute
 We would be happy to have contributions from other members as well. Don't hesitate to make pull requests or contact us if you wish to get contributor rights.
 
-#### Publish with semantic release and conventional commits
-Publishing new versions of extendscriptr is handled by [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release). This means that new versions will be built on travis and published on every push based on the latest commit message. Therefor, commit messages need to satisfy [some conventions](https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md). The project uses [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) to facilitate the messages formatting. Make sure to commit by running ``npm run commit`` instead of ``git commit [-m"change" ...]`` to be prompted to the conventional changelog form.
 
 ### Report issues
 Feel free to report any issue you would encounter using the module.

@@ -6,8 +6,6 @@
   "name": "extendscriptr",
   "description": "A node build configuration to develop extendScripts with es2015 javascript code",
   "scripts": {
-    "commit": "git-cz",
-    "quatsch": "do",
     "clean:temp": "rm -rf ./.tmp ; mkdir ./.tmp",
     "clean:dist": "rm -rf ./test/dist ; mkdir ./test/dist",
     "compile:test:illustrator": "node ./index.js -s test/src/illustrator.js -o test/dist/illustrator.js -t 'illustrator'",
@@ -16,8 +14,7 @@
     "compile:test:aftereffects": "node ./index.js -s test/src/aftereffects.js -o test/dist/aftereffects.js -t 'aftereffects'",
     "compile:test:photoshop": "node ./index.js -s test/src/photoshop.js -o test/dist/photoshop.js -t 'photoshop'",
     "compile:test:all": "npm run compile:test:illustrator & npm run compile:test:indesign & npm run compile:test:indesign-basil & npm run compile:test:aftereffects & npm run compile:test:photoshop",
-    "test": "npm run clean:dist ; npm run compile:test:all ; npm run clean:temp",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "test": "npm run clean:dist ; npm run compile:test:all ; npm run clean:temp"
   },
   "repository": {
     "type": "git",
@@ -58,8 +55,7 @@
   "devDependencies": {
     "babel-eslint": "^6.0.4",
     "cz-conventional-changelog": "^2.1.0",
-    "extendscript-bundlr": "^0.3.1",
-    "semantic-release": "^15.1.5"
+    "extendscript-bundlr": "^0.3.1"
   },
   "config": {
     "commitizen": {
