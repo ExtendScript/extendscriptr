@@ -31,7 +31,7 @@
     "illustrator",
     "photoshop",
     "adobe",
-    "es2105",
+    "es2015",
     "es6",
     "compile"
   ],
@@ -42,12 +42,12 @@
   },
   "homepage": "https://github.com/ExtendScript/extendscriptr#readme",
   "dependencies": {
-    "babel": "^6.23.0",
+    "add-local-binaries-to-path": "^1.1.3",
     "babel-core": "^6.26.0",
     "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
     "babel-plugin-transform-es3-property-literals": "^6.22.0",
     "babel-plugin-transform-es5-property-mutators": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
     "browserify": "^13.3.0",
     "commander": "^2.15.1",
