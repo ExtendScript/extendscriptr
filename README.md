@@ -17,11 +17,9 @@ This tool currently needs npm version 3.x or higher due to the flattened folder 
 We recommend using it as a local dependency\*
 
 - `npm install extendscriptr --save-dev`
-- `./node_modules/.bin/extendscriptr --script src/scripts/helloWorld.js --output dist/helloWord.js`
+- `extendscriptr --script src/scripts/helloWorld.js --output dist/helloWord.js`
 - open the outputted file with ExtendScript Toolkit OR place your script in the relevant application script folder
 - run it
-
-\* a _global install is currently not working due to the fact that ExtendScript is missing to many functions. See [this issue](https://github.com/ExtendScript/extendscriptr/issues/22)_  
 
 ### Watch mode
 
