@@ -65,6 +65,6 @@ if(process.stdin.isTTY){
   process.stdin.on('data',function(d){ script += d });
   process.stdin.on('end',function(){
     var b = getBrowserify( script );
-    console.log( b.bundle() );
+    process.stdout.write( b.bundle() );
   });
 }
