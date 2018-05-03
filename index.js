@@ -12,6 +12,7 @@ extendscriptr
   .option('-s, --script <path>', 'The input file to compile into an executable extendscript')
   .option('-o, --output <path>', 'The path to the wished compiled output file')
   .option('-t, --target [targetApp]', 'The Adobe Application the script is intended for. i.e. InDesign [targetApp]')
+  .option('-e, --targetengine [targetEngine]', 'The target engine. i.e. "session" [targetEngine]')
   .parse(process.argv);
 
 console.log('Running extendscriptr with following options:');
@@ -37,6 +38,14 @@ if( adobeTarget &&
     adobeTarget.indexOf('aftereffects') >= 0)) {
     browserifyPlugins.push([ prependify, '#target ' + extendscriptr.target + '\n' ]);
 };
+
+var targetEngine = String(extendscriptr.targetengine).replace(new RegExp('^[^a-zA-Z_$]|[^0-9a-zA-Z_$]', 'g'), '_');
+
+if (targetEngine !== 'undefined'){
+    if ( targetEngine.length > 0) {
+        browserifyPlugins.push([ prependify, '#targetengine "' + targetEngine + '"\n' ]);
+    }
+}
 
 var b = browserify({
     entries: [ extendscriptr.script ],
