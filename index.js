@@ -40,8 +40,10 @@ if ( adobeTarget &&
 
 var targetEngine = String(extendscriptr.targetengine).replace(new RegExp('^[^a-zA-Z_$]|[^0-9a-zA-Z_$]', 'g'), '_');
 
-if ( targetEngine.length > 0) {
-    browserifyPlugins.push([ prependify, '#targetengine "' + targetEngine + '"\n' ]);
+if (targetEngine !== 'undefined'){
+    if ( targetEngine.length > 0) {
+        browserifyPlugins.push([ prependify, '#targetengine "' + targetEngine + '"\n' ]);
+    }
 }
 
 var b = browserify({
