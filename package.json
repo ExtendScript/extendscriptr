@@ -67,9 +67,10 @@
     }
   },
   "contributors": [
-    "Lucas Vogel",
+    "Bruno Herfst",
     "Fabian Morón Zirfas",
-    "Bruno Herfst"
+    "Lucas Vogel",
+    "Stefano Masini"
   ],
   "engineStrict": true,
   "engines": {
