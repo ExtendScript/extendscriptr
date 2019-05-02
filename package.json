@@ -42,11 +42,11 @@
   },
   "homepage": "https://github.com/ExtendScript/extendscriptr#readme",
   "dependencies": {
-    "babel-core": "^6.26.0",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
     "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
     "babel-plugin-transform-es3-property-literals": "^6.22.0",
     "babel-plugin-transform-es5-property-mutators": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
     "commander": "^2.15.1",
