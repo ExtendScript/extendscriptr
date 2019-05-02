@@ -51,7 +51,7 @@ var b = browserify({
     entries: [ extendscriptr.script ],
     transform: [[require.resolve('babelify'), {
         presets: [
-            'env'
+            '@babel/preset-env'
         ],
         plugins: [
             require.resolve('babel-plugin-transform-es3-member-expression-literals'),
