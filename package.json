@@ -60,7 +60,7 @@
     "cz-conventional-changelog": "^2.1.0",
     "debug": "^4.1.1",
     "eslint": "^5.9.0",
-    "extendscript-bundlr": "^0.3.1"
+    "extendscript-bundlr": "^0.4.0"
   },
   "config": {
     "commitizen": {
