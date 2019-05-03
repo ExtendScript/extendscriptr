@@ -42,25 +42,25 @@
   },
   "homepage": "https://github.com/ExtendScript/extendscriptr#readme",
   "dependencies": {
-    "babel-core": "^6.26.0",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
     "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
     "babel-plugin-transform-es3-property-literals": "^6.22.0",
     "babel-plugin-transform-es5-property-mutators": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babelify": "^8.0.0",
+    "babelify": "^10.0.0",
     "browserify": "^16.2.3",
     "commander": "^2.15.1",
     "contributors": "^0.5.1",
-    "extendscript.prototypes": "0.0.8",
+    "extendscript.prototypes": "0.1.1",
     "prependify": "^1.3.0"
   },
   "devDependencies": {
-    "all-contributors-cli": "^5.4.1",
-    "babel-eslint": "^6.0.4",
+    "all-contributors-cli": "^6.3.1",
+    "babel-eslint": "^10.0.1",
     "cz-conventional-changelog": "^2.1.0",
     "debug": "^4.1.1",
     "eslint": "^5.9.0",
-    "extendscript-bundlr": "^0.3.1"
+    "extendscript-bundlr": "^0.4.0"
   },
   "config": {
     "commitizen": {

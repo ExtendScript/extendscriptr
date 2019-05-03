@@ -1,6 +1,6 @@
 {
 	"presets": [
-		"env"
+		"@babel/preset-env"
 	],
 	"plugins": [
 		"babel-plugin-transform-es3-member-expression-literals",
