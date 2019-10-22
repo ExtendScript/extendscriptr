@@ -64,6 +64,16 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "lumenn",
+      "name": "silmelumenn",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/15074603?v=4",
+      "profile": "http://lumenn.pl",
+      "contributions": [
+        "code",
+        "test"
+      ]
     }
   ],
   "commitConvention": "none"
