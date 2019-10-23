@@ -27,7 +27,7 @@ extendscriptr.options.forEach(function(opt) {
   );
 });
 
-var prototypePolyfills = fs.readFileSync(require.resolve('extendscript.prototypes'), 'utf8');
+var prototypePolyfills = fs.readFileSync(require.resolve('extendscript-es5-shim'), 'utf8');
 var browserifyPlugins = [ [ prependify, prototypePolyfills ] ];
 
 var adobeTarget = String(extendscriptr.target).toLowerCase();

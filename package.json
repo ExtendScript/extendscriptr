@@ -51,7 +51,7 @@
     "browserify": "^16.2.3",
     "commander": "^2.15.1",
     "contributors": "^0.5.1",
-    "extendscript.prototypes": "0.1.1",
+    "extendscript-es5-shim": "^0.2.0",
     "prependify": "^1.3.0"
   },
   "devDependencies": {
