@@ -1,4 +1,9 @@
-.vscode
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
 node_modules
 *.sublime-*
 test/dist
@@ -66,3 +71,62 @@ typings/
 .fusebox/
 # DynamoDB Local files
 .dynamodb/
+*.lcov
+# TypeScript cache
+*.tsbuildinfo
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+# Next.js build output
+# Nuxt.js build / generate output
+dist
+# Gatsby files
+.cache/
+# Comment in the public line in if your project uses Gatsby and *not* Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
+# TernJS port file
+.tern-port
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+# Icon must end with two \r
+Icon
+# Thumbnails
+._*
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+# Dump file
+*.stackdump
+# Folder config file
+[Dd]esktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+# Windows shortcuts
+*.lnk
