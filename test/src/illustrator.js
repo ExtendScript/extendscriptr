@@ -24,7 +24,7 @@ feel more connected, bringing delight in big and \
 small ways, and empowering them to affect change."';
 
 const fontStyle = text1.textRange.characterAttributes;
-fontStyle.textFont = app.textFonts.getByName("MyriadPro-Bold");
+fontStyle.textFont = app.textFonts.getByName("Courier");
 fontStyle.size = 2.5;
 
 // Tests for Array methods
