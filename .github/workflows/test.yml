@@ -4,18 +4,17 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [ 14.x, 16.x, 18.x]
+        node-version: [14.x, 16.x, 18.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -24,28 +23,24 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
+      - run: npm install --save-dev https://github.com/basiljs/basil.js#develop
       - run: npm test
       - run: npm run build --if-present
       - run: npm run lint --if-present
-
-      release:
-      release:
-        name: semantic-release
-        needs: [build]
-        runs-on: ubuntu-latest
-        outputs:
-          new-release-published: ${{ steps.semantic-release.outputs.new_release_published }}
-          new-release-version: ${{ steps.semantic-release.outputs.new_release_version }}
-        steps:
-          - uses: actions/checkout@v3
-            with:
-              persist-credentials: false
-          - uses: actions/setup-node@v3
-            with:
-              node-version-file: '.nvmrc'
-          - run: npm ci
-          - id: semantic-release
-            run: npx semantic-release
-            env:
-              GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-              NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  release:
+    name: semantic-release
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - run: npm ci
+      - id: semantic-release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
