@@ -58,7 +58,6 @@
 		"@technologiestiftung/semantic-release-config": "1.2.1",
 		"all-contributors-cli": "6.3.1",
 		"babel-eslint": "10.0.1",
-		"basiljs": "git+https://github.com/basiljs/basil.js#develop",
 		"cz-conventional-changelog": "2.1.0",
 		"debug": "4.1.1",
 		"eslint": "5.9.0",
