@@ -62,4 +62,8 @@ var b = browserify({
     plugin: browserifyPlugins
 });
 
-b.bundle().pipe(fs.createWriteStream(extendscriptr.output));
+if (extendscriptr.output) {
+    b.bundle().pipe(fs.createWriteStream(extendscriptr.output));
+}
+
+module.exports = () => b.bundle();
